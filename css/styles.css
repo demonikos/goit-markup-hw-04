@@ -266,6 +266,22 @@ button {
     flex-grow: 0;
 }
 
+.advantages-image {
+    padding: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-color);
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+.advantages-icon {
+    width: 64px;
+    height: 64px;
+    fill: var(--dark-color)
+}
+
 .we-doing {
     padding-top: 0;
 }
@@ -320,12 +336,13 @@ button {
     /* margin-bottom: 48px; */
 }
 
-.gallery-card {
+.gallery-link {
+    display: inline-block;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
-.gallery-card:hover,
-.gallery-card:focus {
+.gallery-link:hover,
+.gallery-link:focus {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
@@ -333,7 +350,6 @@ button {
     padding: 32px 16px;
     border: 0.5px solid var(--light-color);
     border-top: none;
-    /* box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08); */
 }
 
 .filter-btn {
@@ -357,6 +373,10 @@ button {
 .filter-btn:hover,
 .filter-btn:focus {
     color: var(--white-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 2px 1px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+    ;
 }
 
 .team-soc-list {
@@ -395,19 +415,6 @@ button {
     fill: var(--light-color);
 }
 
-.advantages-image {
-    padding: 24px 100px;
-    display: block;
-    background-color: var(--light-color);
-    border-radius: 4px;
-    margin-bottom: 8px;
-}
-
-.advantages-icon {
-    width: 64px;
-    height: 64px;
-}
-
 .customers-list {
     display: flex;
     justify-content: space-between;
@@ -417,8 +424,9 @@ button {
 .customers-item {
     width: 168px;
     height: 88px;
-    border: 1px solid var(--subtext-color);
+    /* border: 1px solid red;
     border-radius: 4px;
+    border-color: var(--subtext-color); */
     /* padding: 16px 32px; */
 }
 
@@ -430,7 +438,8 @@ button {
     align-items: center;
     border: 1px solid var(--subtext-color);
     border-radius: 4px;
-    fill: var(--subtext-color)
+    fill: var(--subtext-color);
+    /* border-color: var(--acttion-color); */
 }
 
 .customers-icon {
@@ -438,10 +447,14 @@ button {
     height: 56px;
 }
 
-.customers-icon:is(:hover, :focus) {
-    /* background-color: var(--action-color); */
-    fill: var(--action-color)
+.customers-link:is(:hover, :focus) {
+    fill: var(--action-color);
+    border-color: var(--action-color);
 }
+
+/* .customers-icon:is(:hover, :focus){
+    fill: var(--action-color);
+} */
 
 /* ---------------------------- */
 
