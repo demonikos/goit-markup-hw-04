@@ -289,6 +289,7 @@ button {
     background-color: var(--white-color);
     border-radius: 0px 0px 4px 4px;
     text-align: center;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .team-list {
@@ -315,14 +316,24 @@ button {
 
 .gallery-item {
     width: calc((100% - 48px) / 3);
-    flex-grow: none;
+    /* flex-grow: none; */
     /* margin-bottom: 48px; */
+}
+
+.gallery-card {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.gallery-card:hover,
+.gallery-card:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .gallery-content {
     padding: 32px 16px;
     border: 0.5px solid var(--light-color);
     border-top: none;
+    /* box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08); */
 }
 
 .filter-btn {
@@ -419,7 +430,7 @@ button {
     align-items: center;
     border: 1px solid var(--subtext-color);
     border-radius: 4px;
-    fill:var(--subtext-color)
+    fill: var(--subtext-color)
 }
 
 .customers-icon {
@@ -427,8 +438,24 @@ button {
     height: 56px;
 }
 
+.customers-icon:is(:hover, :focus) {
+    /* background-color: var(--action-color); */
+    fill: var(--action-color)
+}
+
 /* ---------------------------- */
 
+.footer-social-media {
+    font-weight: 500;
+    color: var(--white-color);
+    margin-bottom: 16px;
+}
+
+.footer-columns {
+    display: flex;
+    gap: 120px;
+    align-items: baseline;
+}
 
 .footer-soc-list {
     display: flex;
@@ -440,7 +467,9 @@ button {
     display: flex;
     width: 40px;
     height: 40px;
-    background-color: var(--brand-color);
+    /* background-color: var(--brand-color); */
+    background: rgba(255, 255, 255, 0.1);
+    ;
     border-radius: 50%;
 }
 
@@ -453,7 +482,7 @@ button {
 }
 
 .footer-soc-item:is(:hover, :focus) {
-    background-color: var(--action-color);
+    background-color: var(--green-color);
 }
 
 .footer-soc-icon {
