@@ -250,10 +250,6 @@ button {
     color: var(--white-color);
 }
 
-/* .hero-btn:hover{
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-} */
-
 /* -----Sections----- */
 
 .advantages-list {
@@ -332,8 +328,6 @@ button {
 
 .gallery-item {
     width: calc((100% - 48px) / 3);
-    /* flex-grow: none; */
-    /* margin-bottom: 48px; */
 }
 
 .gallery-link {
@@ -376,6 +370,7 @@ button {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
         0px 2px 1px rgba(0, 0, 0, 0.08),
         0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-color: var(--action-color);
     ;
 }
 
@@ -389,29 +384,23 @@ button {
     margin-bottom: 8px;
 }
 
-.team-soc-item {
-    display: flex;
+.team-soc-link {
     width: 40px;
     height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--brand-color);
     border-radius: 50%;
 }
 
-.team-soc-link {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.team-soc-item:is(:hover, :focus) {
+.team-soc-link:is(:hover, :focus) {
     background-color: var(--action-color);
 }
 
 .team-soc-icon {
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
     fill: var(--light-color);
 }
 
@@ -424,10 +413,6 @@ button {
 .customers-item {
     width: 168px;
     height: 88px;
-    /* border: 1px solid red;
-    border-radius: 4px;
-    border-color: var(--subtext-color); */
-    /* padding: 16px 32px; */
 }
 
 .customers-link {
@@ -439,7 +424,6 @@ button {
     border: 1px solid var(--subtext-color);
     border-radius: 4px;
     fill: var(--subtext-color);
-    /* border-color: var(--acttion-color); */
 }
 
 .customers-icon {
@@ -451,10 +435,6 @@ button {
     fill: var(--action-color);
     border-color: var(--action-color);
 }
-
-/* .customers-icon:is(:hover, :focus){
-    fill: var(--action-color);
-} */
 
 /* ---------------------------- */
 
@@ -472,7 +452,6 @@ button {
 
 .footer-soc-list {
     display: flex;
-    /* justify-content: center; */
     gap: 24px;
 }
 
@@ -480,9 +459,7 @@ button {
     display: flex;
     width: 40px;
     height: 40px;
-    /* background-color: var(--brand-color); */
     background: rgba(255, 255, 255, 0.1);
-    ;
     border-radius: 50%;
 }
 
@@ -492,14 +469,15 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 50%;
 }
 
-.footer-soc-item:is(:hover, :focus) {
+.footer-soc-link:is(:hover, :focus) {
     background-color: var(--green-color);
 }
 
 .footer-soc-icon {
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
     fill: var(--light-color);
 }
