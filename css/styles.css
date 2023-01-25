@@ -343,7 +343,7 @@ button {
 .gallery-content {
     padding: 32px 16px;
     border: 0.5px solid var(--light-color);
-    border-top: none;
+    border-top: 0;
 }
 
 .filter-btn {
